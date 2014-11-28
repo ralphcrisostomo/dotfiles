@@ -2,4 +2,4 @@
 
 alias b="../"
 alias c="$HOME/Projects/_clone"
-alias r="SOURCE $HOME/.zshrc"
+alias r="source $HOME/.zshrc"
