@@ -8,9 +8,9 @@ function get_pwd() {
 }
 
 function battery_charge() {
-  if [ -e ~/bin/batcharge.py ]
+  if [ -e $HOME/.zsh/batcharge.py ]
   then
-    echo `python ~/bin/batcharge.py`
+    echo `python $HOME/.zsh/batcharge.py`
   else
     echo ''
   fi
