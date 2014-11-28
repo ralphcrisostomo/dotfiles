@@ -1,0 +1,378 @@
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="doubleend"
+
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
+
+# Comment this out to disable bi-weekly auto-update checks
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
+export UPDATE_ZSH_DAYS=13
+
+# Uncomment following line if you want to disable colors in ls
+# DISABLE_LS_COLORS="true"
+
+# Uncomment following line if you want to disable autosetting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+COMPLETION_WAITING_DOTS="true"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# plugins=(git git-flow git-flow-avh github coffee osx ruby rails brew bower)
+plugins=(git git-flow git-flow-avh ruby)
+
+source $ZSH/oh-my-zsh.sh
+
+# Customize to your needs...
+# export PATH=$HOME/.rvm/gems/ruby-1.9.3-p385/bin:/Users/ralfcrisostomo/.rvm/gems/ruby-1.9.3-p385@global/bin:$HOME/.rvm/rubies/ruby-1.9.3-p385/bin:$HOME/.rvm/bin:/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin
+
+# export PATH=$PATH:~/Projects/aws/AWS-ElasticBeanstalk-CLI-2.3.1/eb/macosx/python2.7/
+
+export LC_CTYPE="utf-8"
+export USER="ralphcrisostomo"
+export PATH=$PATH:/usr/local/bin:/Users/Mikasa/.rvm/gems/ruby-2.0.0-p247/bin:/Users/Mikasa/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/Mikasa/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/Mikasa/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=$PATH:~/Projects/resources/AWS-ElasticBeanstalk-CLI-2.6.3/eb/macosx/python2.7/
+export PATH=$PATH:/usr/local/bin
+export PYTHONPATH=~/Projects/resources/AWS-ElasticBeanstalk-CLI-2.6.3/eb/macosx/python2.7/site-packages
+
+# ----------------
+# RVM
+# ----------------
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# ----------------
+# Fortune / Cowsay
+# ----------------
+# fortune | cowsay | lolcat
+
+# ----------------
+# Default directory
+# ----------------
+# cd '~/Projects/recordtv/new/online_interface'
+
+# ----------------
+# zshrc
+# ----------------
+alias r='source ~/.zshrc'
+alias z='open -a "Sublime Text 2" ~/.zshrc'
+alias scan='nmap -sn 192.168.1.0/24'
+
+
+# ----------------
+# Application
+# ----------------
+alias s='open -a "Sublime Text 2"'
+alias ides='open -a "Sublime Text 2"'
+alias ider='open -a "RubyMine"'
+alias idep='open -a "PhpStorm"'
+alias idew='open -a "WebStorm"'
+alias gbx='open -a "GitBox"'
+
+# ----------------
+# Common Commands
+# ----------------
+alias chrome='open -a Google\ Chrome --args --disable-web-security'
+alias o='open .'
+alias lh='ls -a | egrep "^\."'
+alias l='ls | egrep .'
+alias rmdir='rm -rF'
+alias pg='ping www.google.com'
+alias dl="curl -O"
+alias t='tree'
+alias deleteDownloadHistory='sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* "delete from LSQuarantineEvent"'
+alias showDownloadHistory='sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* "select LSQuarantineDataURLString from LSQuarantineEvent" | sort'
+alias deleteChromeHistory='rm -rf ~/Library/Application\ Support/Google/Chrome/Default/*'
+alias compress='tar -zcvf'
+alias uncompress='tar -zxvf'
+alias task='ps aus'
+# alias ver=`grep version package.json| sed s/\"//g| sed s/version://g| sed s/-BUILD-NUMBER//g| tr -d ' '| tr -d ','`
+alias ns='node server.js'
+alias php_server='php -S localhost:8000'
+alias remove='rm -rfv .??* *'
+alias vlc='open -n /Applications/VLC.app'
+alias _cctv1='open -n /Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.41:554/user=admin&password=&channel=1&stream=0.sdp?real_stream--rtp-caching=100"'
+alias _cctv2='open -n /Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.42:554/user=admin&password=&channel=1&stream=0.sdp?real_stream--rtp-caching=100"'
+alias _cctv3='open -n /Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.43:554/user=admin&password=&channel=1&stream=0.sdp?real_stream--rtp-caching=100"'
+alias cctv1='/Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.41:554/user=admin&password=&channel=1&stream=0.sdp?real_stream--rtp-caching=100"'
+alias cctv2='/Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.42:554/user=admin&password=&channel=1&stream=0.sdp?real_stream--rtp-caching=100"'
+alias cctv3='/Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.43:554/user=admin&password=&channel=1&stream=0.sdp?real_stream--rtp-caching=100"'
+
+
+
+# ----------------
+# Directories
+# ----------------
+alias p='~/Projects'
+alias c='~/Projects/clones'
+alias b=' cd ../'
+alias rtv='~/Projects/recordtv/Mock.Mobile.Interface'
+alias ol='~/Projects/recordtv/new/online_interface'
+alias htdocs='/Applications/XAMPP/htdocs'
+alias downloads='~/Downloads'
+alias root='~/'
+alias spd='~/Library/Application\ Support/Sublime\ Text\ 2/Packages/'
+alias mock='~/Projects/wordpress/mock'
+alias lk='~/Projects/littleknot'
+alias lkf='~/Projects/littleknot/littleknot-front'
+alias lkm='~/Projects/littleknot/littleknot-main'
+alias lko='~/Projects/littleknot/__old/littleknot'
+alias lkn='~/Projects/littleknot/littleknot-node'
+alias v2='~/Projects/littleknot/littleknot-node-v2'
+alias v2_='NODE_ENV=development DEBUG=lkn:* coffee ./bin/dev -n'
+alias v2_dev='NODE_ENV=development DEBUG=lkn:* coffee ./bin/dev -n'
+alias v2_prod='NODE_ENV=production DEBUG=lkn:* coffee ./bin/prod -n'
+alias v2_test='NODE_ENV=test DEBUG=lkn:* coffee ./bin/test -n'
+alias api='~/Projects/recordtv/api'
+alias layout='~/Projects/wordpress/PM00/dev/layout'
+alias v3='~/Projects/recordtv/v3/DesktopTabletInterface'
+alias freelance='~/Projects/freelance'
+alias exp='~/Projects/exp'
+alias hooks='~/.hooks/'
+alias wp='~/Projects/wordpress'
+alias m='~/Projects/merakii'
+alias foodnews='~/Projects/freelance/alchemy/web.development/foodnews/Foodnews'
+alias nitro='/Applications/MAXON/CINEMA\ 4D\ R15/plugins/NitroBlast/res/voroc/mh'
+# alias nitro='/Applications/MAXON/CINEMA\ 4D\ R13/plugins/NitroBlast/res/voroc/mh'
+alias hmc='~/Projects/HueMedia/HueMediaCreatives'
+alias lkf_to_lkn='rm -rfv ~/Projects/littleknot/littleknot-node/bower_components/littleknot-front && cp -r ~/Projects/littleknot/littleknot-front ~/Projects/littleknot/littleknot-node/bower_components/'
+alias _b='cd ~/Projects/littleknot/littleknot-front && grb && lkf_to_lkn && cd ~/Projects/littleknot/littleknot-node && grunt build:debug:develop && node server.js'
+# ----------------
+# Dotfiles
+# ----------------
+
+
+# ----------------
+# Build
+# ----------------
+alias build='./build.sh'
+
+# ----------------
+# Git
+# ----------------
+# Hooks tempalte
+# /usr/local/share/git-core/templates/hooks
+# $ git remote add origin https://github.com/user/repo.git
+# $git push -u origin master
+alias gup='git add . && git commit -am update && git push'
+alias ga='git add .'
+alias gs='git status'
+alias gc='git commit -am'
+alias gcu='git commit -am "update"'
+alias gcd='git checkout develop'
+alias gcm='git checkout master'
+alias gt="git tag"
+alias grao="git remote add origin" # $ git remote add origin https://github.com/user/repo.git
+alias rmds='find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch -f'
+alias gp-aws-prod='git aws.push -e oi-prod'
+alias gp-aws-staging='git aws.push -e onlineinterface-staging'
+alias gp-aws-api-production='git aws.push'
+alias rb='git flow feature rebase'
+
+
+# ----------------
+# Elastic Beanstalk
+# @ref: http://compositecode.com/coding-community/documentation-for/amazon-web-services/elastic-beanstalk-setting-up-eb-command-line-tools/
+# ----------------
+alias eb-status-production='eb status -e oi-prod'
+alias eb-status-staging='eb status -e onlineinterface-staging'
+
+
+# sudo -i
+# cd /var/app/
+# vi /var/log/eb-tools.log
+# cd ondeck/
+# RAILS_ENV=staging bundle exec rake assets:precompile
+# /etc/init.d/passenger reload
+# ps -A | grep [name of program you want to close]
+# kill -9 [process id]
+
+# STAGING
+# RAILS_ENV=development script/rails s -p 81
+
+# SHOW ALL HIDDEN FILES!
+# defaults write com.apple.finder AppleShowAllFiles -bool true
+# osascript -e 'quit app "Finder"'
+
+# ----------------
+# Git-Flow
+# ----------------
+alias gfrs='git flow release start'
+alias gfrf='git flow release finish'
+alias gf_release_start_minor='git flow release start minor'
+alias gf_release_start_major='git flow release start major'
+alias gf_release_finish='git flow release finish'
+alias gf_hotfix_start='git flow hotfix start patch'
+alias gf_hotfix_finish='git flow hotfix finish'
+alias gf_inject_hooks='ln -s -f ~/.hooks/* .git/hooks'
+
+# ----------------
+# Compass
+# ----------------
+alias cw='compass watch'
+
+# ----------------
+# CoffeeScript
+# ----------------
+alias csw='coffee -o js -cw coffee'
+
+# ----------------
+# Forge
+# ----------------
+alias fc='forge create'
+alias fw='forge watch' # Must be run from within a Forge project.
+alias fl='forge link'  # /wordpress/wp-content/themes/your_theme
+
+# ----------------
+# Rails
+# ----------------
+alias rrs='railsServerStart'
+alias rrst='thin start --ssl -p 3004'
+alias rpid="top -u | grep rails"
+alias rri='rm public/index.html'
+# ----------------
+# Grunt
+# ----------------
+alias grs='grunt server'
+alias grt='grunt test'
+alias grb='grunt build'
+alias gip='grunt-init project'
+# ----------------
+# SSH
+# ----------------
+alias ssh-staging='ssh ec2-user@ec2-54-251-208-29.ap-southeast-1.compute.amazonaws.com'
+alias pi='ssh 192.168.1.20 -l pi'
+
+# ----------------
+# Cake
+# ----------------
+
+# ----------------
+# Yeoman
+# ----------------
+
+# ----------------
+# Bower
+# ----------------
+alias bower='noglob bower'
+
+# ----------------
+# Middleman
+# ----------------
+alias mi='middleman init'
+alias ms='middleman server'
+alias mb='middleman build'
+
+# ----------------
+# Rake
+# ----------------
+
+# ----------------
+# Source
+# ----------------
+source ~/.dotfiles/src/dotfiles.sh
+source /Applications/XAMPP/xamppfiles
+#source ~/Projects/clones/JSON/JSON.sh
+
+# ---------------
+# XAMPP
+# ---------------
+alias xampp='sudo /Applications/XAMPP/xamppfiles/xampp'
+alias xampp_link='ln -s -f $PWD /Applications/XAMPP/xamppfiles/htdocs'
+alias link_me_to_htdocs='ln -s -f $PWD /Applications/XAMPP/xamppfiles/htdocs'
+
+loop() {
+	until "$1"; do echo "Try again"; done
+}
+
+merakii() {
+
+	if [ -z "$1" ]
+	then
+		echo "\033[31mInsert A Filename"
+	else
+		middleman init "$1" --template=merakii
+	fi
+}
+
+
+railsServerStart(){
+	kill -9 $(cat tmp/pids/server.pid)
+	rm -rf tmp
+	rails s -p 3003
+}
+
+redalert() {
+	# Delete : Torrent, Downloads, Starcraft2
+	# Clear : History, Documents
+
+	echo "\033[31mIts HOT! Becareful!!!\n\033[0m"
+	answer=
+	vared -p "Running this script is dangerous, do you want to continue? [YeS] " answer
+	if [ $answer = "YeS" ]
+	then
+		echo "\033[31mIt will DELETE the following files: \n\033[0m"
+		echo "\033[32m\t /Application/StarCraft II \n\033[0m"
+		echo "\033[32m\t /Application/uTorrent.app \n\033[0m"
+		echo "\033[32m\t ~/Downloads/* \n\033[0m"
+		echo "\033[32m\t ~/.zsh_history \n\033[0m"
+		echo "\033[32m\t ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* \n\033[0m"
+		echo "\033[32m\t ~/Library/Application\ Support/Google/Chrome/Default/* \n\033[0m"
+
+		vared -p "Are you sure? [yEs] " answer
+		if [ $answer = "yEs" ]
+		then
+
+			rm -rf "/Applications/StarCraft II"
+			rm -rf "/Applications/uTorrent.app"
+			rm -rf ~/Downloads/*
+			rm ~/.zsh_history
+			sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'
+			rm -rf ~/Library/Application\ Support/Google/Chrome/Default/*
+
+			echo "\033[32mDeleting... \n\033[0m"
+			echo "\033[32m\t /Applications/StarCraft II - \033[31mDeleted \n\033[0m"
+			echo "\033[32m\t /Applications/uTorrent.app - \033[31mDeleted\n\033[0m"
+			echo "\033[32m\t ~/Downloads/* - \033[31mDeleted\n\033[0m"
+			echo "\033[32m\t ~/.zsh_history - \033[31mDeleted\n\033[0m"
+			echo "\033[32m\t ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* - \033[31mDeleted\n\033[0m"
+			echo "\033[32m\t ~/Library/Application\ Support/Google/Chrome/Default/* - \033[31mDeleted\n\033[0m"
+			echo  "\033[32mFinished! \n"
+
+		else
+			echo  "\033[32mBye! \n"
+		fi
+
+	else
+		echo  "\033[32mBye! \n"
+	fi
+}
+
+
+
+
+# function battery_charge() {
+#     if [ -e ~/bin/batcharge.py ]
+#     then
+#         echo `python ~/bin/batcharge.py`
+#     else
+#         echo '';
+#     fi
+# }
+
+
+

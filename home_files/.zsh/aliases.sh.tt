@@ -1,6 +1,24 @@
 #ZSH ALIASES
 
-alias b="../"
-alias c="$HOME/Projects/_clone"
+
+# Common
 alias r="source $HOME/.zshrc"
 alias pi="ssh pi@192.168.1.20"
+alias scan='nmap -sn 192.168.1.0/24'
+alias z='open -a "Sublime Text 2" ~/.zshrc'
+alias o='open .'
+alias c="clear"
+alias h="history"
+alias l="ls -alh"
+
+
+# CCTV
+alias cctv1='/Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.41:554/user=admin&password=&channel=1&stream=0.sdp?real_stream--rtp-caching=100"'
+alias cctv2='/Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.42:554/user=admin&password=&channel=1&stream=0.sdp?real_stream--rtp-caching=100"'
+alias cctv3='/Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.43:554/user=admin&password=&channel=1&stream=0.sdp?real_stream--rtp-caching=100"'
+
+# Directories
+alias b="../"
+alias cln="$HOME/Projects/_clone"
+alias exp="$HOME/Projects/_experiments"
+alias rsc="$HOME/Projects/_resources"
