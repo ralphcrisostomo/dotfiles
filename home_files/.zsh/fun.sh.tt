@@ -1,3 +1,3 @@
-#ZSH FUN
+# ZSH FUN
 fortune | cowsay
-say -v "Alex" "Ka moo sta, ka na?"
+# say -v "Alex" "Ka moo sta, ka na?"
