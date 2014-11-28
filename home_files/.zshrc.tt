@@ -19,5 +19,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Aliases
 . "$HOME/.zsh/aliases.sh"
 
+# Fun
+. "$HOME/.zsh/fun.sh"
+
 # Command Prompt (http://jonisalonen.com/2012/your-bash-prompt-needs-this)
 . "$HOME/.zsh/prompt.sh"
