@@ -4,10 +4,10 @@
 [init]
   templatedir = ~/.git_template
 [user]
-  # name = <enter name here>
-  # email = <enter email here>
+  name = "Ralph Crisostomo"
+  email = rrecrisostomo@gmail.com
 [github]
-  # user = <enter user here>
+  user = ralphcrisostomo
   # token = <enter token here>
 [color]
   diff = auto
