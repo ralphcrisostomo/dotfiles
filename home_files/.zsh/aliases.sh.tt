@@ -38,3 +38,4 @@ alias ides='open -a "Sublime Text 2"'
 # Git
 alias gp="until git push; do echo 'Try again'; done"
 alias gc="git commit -am 'Updated :)'"
+alias gs="git status"
