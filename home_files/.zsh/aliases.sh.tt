@@ -1,6 +1,5 @@
 #ZSH ALIASES
 
-
 # Common
 alias r="source $HOME/.zshrc"
 alias pi="ssh pi@192.168.1.20"
@@ -22,3 +21,8 @@ alias b="../"
 alias cln="$HOME/Projects/_clone"
 alias exp="$HOME/Projects/_experiments"
 alias rsc="$HOME/Projects/_resources"
+alias osx="$HOME/Projects/_clone/osx"
+
+# Application
+alias ider='open -a "RubyMine"'
+alias ides='open -a "Sublime Text 2"'
