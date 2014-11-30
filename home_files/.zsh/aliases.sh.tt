@@ -11,6 +11,8 @@ alias h="history"
 alias l="ls -alh"
 alias eject="find /dev -name 'disk[1-9]' -exec diskutil eject {} \;"
 
+
+
 # CCTV
 alias cctv1='/Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.41:554/user=admin&password=&channel=1&stream=0.sdp?real_stream--rtp-caching=100"'
 alias cctv2='/Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.42:554/user=admin&password=&channel=1&stream=0.sdp?real_stream--rtp-caching=100"'
@@ -26,3 +28,7 @@ alias osx="$HOME/Projects/_clone/osx"
 # Application
 alias ider='open -a "RubyMine"'
 alias ides='open -a "Sublime Text 2"'
+
+# Git
+alias ugp="until git push; do echo 'Try again'; done"
+alias gcu="git commit -am 'Updated :)'"
