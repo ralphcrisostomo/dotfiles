@@ -11,7 +11,7 @@ alias h="history"
 alias l="ls -alh"
 alias eject="find /dev -name 'disk[1-9]' -exec diskutil eject {} \;"
 alias run="./run.sh"
-alias aa='open -a "Sublime Text 2" $HOME/Projects/_clone/dotfiles/home_filez/.zsh/aliases.sh.tt'
+alias aa='open -a "Sublime Text 2" $HOME/Projects/_clone/dotfiles/home_files/.zsh/aliases.sh.tt'
 
 
 
