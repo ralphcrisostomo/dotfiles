@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/bin/zsh
 # PUBLIC FUNCTIONS
 
 # Description: Run a command in bash over until success
 # Parameters: $1 (required) - The command to be loop
 # Reference: http://stackoverflow.com/questions/5274294/how-can-you-run-a-command-in-bash-over-until-success
 function loop_cmd() {
-    if [[ "$1" ]]; then
+    if [ "$1" ]; then
         until "$1"; do echo "Try again"; done
     fi
 }
