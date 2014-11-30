@@ -22,6 +22,7 @@ alias cctv3='/Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.43:554/u
 
 # Directories
 alias b="../"
+alias p="$HOME/Projects"
 alias cln="$HOME/Projects/_clone"
 alias exp="$HOME/Projects/_experiments"
 alias rsc="$HOME/Projects/_resources"
