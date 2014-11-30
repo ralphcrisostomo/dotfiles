@@ -10,6 +10,7 @@ alias c="clear"
 alias h="history"
 alias l="ls -alh"
 alias eject="find /dev -name 'disk[1-9]' -exec diskutil eject {} \;"
+alias run="./run.sh"
 
 
 
@@ -23,7 +24,9 @@ alias b="../"
 alias cln="$HOME/Projects/_clone"
 alias exp="$HOME/Projects/_experiments"
 alias rsc="$HOME/Projects/_resources"
+alias prj="$HOME/Projects/_projects"
 alias osx="$HOME/Projects/_clone/osx"
+alias dot="$HOME/Projects/_clone/dotfiles"
 
 # Application
 alias ider='open -a "RubyMine"'
