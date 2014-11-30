@@ -33,5 +33,5 @@ alias ider='open -a "RubyMine"'
 alias ides='open -a "Sublime Text 2"'
 
 # Git
-alias ugp="until git push; do echo 'Try again'; done"
-alias gcu="git commit -am 'Updated :)'"
+alias gp="until git push; do echo 'Try again'; done"
+alias gc="git commit -am 'Updated :)'"
