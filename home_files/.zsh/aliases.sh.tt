@@ -9,7 +9,7 @@ alias o='open .'
 alias c="clear"
 alias h="history"
 alias l="ls -alh"
-
+alias eject="find /dev -name 'disk[1-9]' -exec diskutil eject {} \;"
 
 # CCTV
 alias cctv1='/Applications/VLC.app/Contents/MacOS/VLC "rtsp://192.168.1.41:554/user=admin&password=&channel=1&stream=0.sdp?real_stream--rtp-caching=100"'
