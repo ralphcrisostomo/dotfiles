@@ -29,7 +29,7 @@ alias rsc="$HOME/Projects/_resources"
 alias prj="$HOME/Projects/_projects"
 alias osx="$HOME/Projects/_clone/osx"
 alias dot="$HOME/Projects/_clone/dotfiles"
-
+alias lkf="$HOME/Projects/_projects/websites/littleknot/lkfv2"
 
 # Application
 alias ider='open -a "RubyMine"'
