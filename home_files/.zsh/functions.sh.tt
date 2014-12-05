@@ -9,3 +9,36 @@ function loop_cmd() {
         until "$1"; do echo "Try again"; done
     fi
 }
+
+# Backup pictures to /Pictures
+# Parameters: $1 (required) - The title for that diretory
+# Generated Directory:
+#
+#   '~/Pictures/20140120 - GF2 - Tokyo'
+#
+function backup_picture() {
+    local _src="/Volumes"
+    local _date=$(date +"%Y%d%m")
+    for external in GF2 GM1 GPRO1
+    do
+        if [[ ! -e "$_src/$external" ]]; then
+            printf "\nNo external storage detected.\n"
+            break;
+        else
+            local _dir="$_date - $external - $1"
+            local _dest="$HOME/Pictures/$_dir"
+            printf "\nFound: $external\n"
+            printf "\nMake directory: $_dir \n"
+            mkdir -p "$_dest/images"
+            mkdir -p "$_dest/videos"
+
+            printf "\nCopying image files...\n"
+            find -E "$_src/$external" -regex '.*\.(JPG|jpg|png)' -execdir cp -fv "{}" "$_dest/images" \;
+
+            printf "\nCopying video files...\n"
+            find -E "$_src/$external" -regex '.*\.(mov|mp4)' -execdir cp -fv "{}" "$_dest/videos" \;
+
+            printf "\nCleaning $external files...\n"
+        fi
+    done
+}
